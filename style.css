@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --background-color:#F3F5FC;
+    --text-color:#0A3871;
+    --btnCriptografar-color:#0A3871;
+    --btnDescriptografar-color:#D8DFE8;
+    --font-family:"inter", sans-serif;
+    --text-color-display:#495057;
+    --background-color-display:#FFFFFF;
+    --btnCopiar-color:#0A3871;
+    --shadow-color:0px 22px 36px -8px rgba(0, 0, 0, 0.08);
+}
+
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+}
+main {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.logo {
+    width: 6rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+
+.texto-inicial {
+    width: 50rem;
+    margin-top: 5rem;
+    margin-left: 4rem;
+    border: none;
+    outline: none;
+    resize: none;
+    background-color: #F3F5FC;
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+::placeholder {
+    color: var(--text-color);
+}
+
+.warning {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: flex;
+}
+
+.btn-criptografar {
+    width: 25rem;
+    height: 4rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--btnCriptografar-color);
+    color: white;
+    font-size: 1rem;
+}
+
+.btn-descriptografar {
+    margin-left: 2rem;
+    width: 25rem;
+    height: 4rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--btnDescriptografar-color);
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+
+.display-final {  
+    display: flex; 
+    flex-direction: column;
+    width: 25rem;
+    height: 36rem;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    border-radius: 1rem;
+    background-color: var(--background-color-display);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-color);
+    box-shadow: var(--shadow-color);
+}
+
+.avatar{
+    width: 15rem;
+}
+
+.title {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    color: var(--text-color-display);
+}
+
+.text {
+    margin-top: 0.5rem;
+    color: var(--text-color-display);
+}
+
+#resultado {
+    width: 25rem;
+    font-size: 2rem;
+    width: 22rem;
+    height: 0.5rem;
+    text-align: justify;
+    
+}
+
+.btn-copiar {
+    display: none;
+    margin-top: 31.5rem;
+    width: 25rem;
+    height: 4rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    background-color: var(--btnCopiar-color);
+    color:white;
+    gap: 0.8rem; 
+    border: none; 
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        height: 70rem;
+        flex-wrap: wrap;
+    }
+
+    .texto-inicial {
+        margin-top: 3rem;
+        height: 20rem;
+        margin-left: 1rem;
+    }
+
+    #resultado {
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        width: 48rem;
+    }
+
+   .display-final {
+        box-shadow:  var(--shadow-color);
+        margin-top: 1rem;
+        margin-left: 2rem;
+        width: 48rem;
+        height: 20rem;
+        text-align: center; 
+        
+    .title {
+        margin-top: 3rem;
+    }
+
+   }
+
+   .avatar {
+        display: none;
+   }
+
+   .btn-copiar {
+        background-color: var(--btnCopiar-color);
+        margin-top:14rem;
+        width: 48rem;
+        height: 4rem;
+   }
+}
+
+@media screen and (max-width: 357px) {
+
+    body {
+        height: 70rem;
+    }
+
+    .logo {
+        flex-wrap: wrap;
+    }
+
+    .texto-inicial {
+        width: 30rem;
+    }
+
+    .warning {
+        width: 20rem;
+        margin-left: 2rem;
+    }
+    .btn {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-criptografar {
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .display-final {
+        box-shadow:  var(--shadow-color);
+        margin-top: 11rem;
+        margin-left: 3rem;
+        width: 25rem;
+        height: 20rem;
+        text-align: center; 
+    }
+
+    #resultado {
+        width: 23rem;
+        margin-left: 1rem;
+        text-align: center;
+    }
+
+    .btn-copiar {
+        background-color: var(--btnCopiar-color);
+        margin-top:13rem;
+        width: 25rem;
+        height: 4rem;
+   }
+}

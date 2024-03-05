@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/padlockman.ico" type="image/x-icon">
+    <title>Mensagem codificada</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="assets/images/alura.svg" alt="logo da alura">
+    </header>
+
+    <main>
+           <div class="texto-inicial">
+                <textarea class="texto-inicial" id="texto" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
+                <img class="warning" src="assets/images/warnig.svg" alt="imagem de aviso so letras minusculas">
+                <div class="btn">
+                    <button class="btn-criptografar" class="btn-screen">Criptografar</button>
+                    <button class="btn-descriptografar" class="btn-screen">Descriptografar</button>
+                </div>
+           </div>
+           <div class="display-final">
+                <div id="sem-resultado">
+                    <img class="avatar" src="assets/images/avatar.svg" alt="avatar alura">
+                    <h2 class="title">Nenhuma mensagem encontrada</h2>
+                    <p class="text">Digite um texo que você deseja criptografar ou descriptografar.</p>
+                </div>
+                <p id="resultado"></p>  
+                <button class="btn-copiar" class="btn-screen" type="button">Copiar</button>
+            </div>
+    </main>
+        <script></script>
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
